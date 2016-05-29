@@ -1,0 +1,4 @@
+/app/register\_mac/[mac\_address] & POST & None & Register given mac to a registered user &\{'Success': 1\} & request must be sent with auth cookie \\ \hline
+    /app/sync & GET & None & Request all unread events (by a specific user) & \pbox{30cm}{ \{events:[\\ \quad \{type: EVENT TYPE, \\ \quad description: EVENT DESCRIPTION, \\
+    \quad timestamp: \{ \\ \quadd year: YEAR, \\ \quadd month: MONTH, \\ \quadd day: DAY, \\ \quadd hour: HOUR, \\ \quadd minute: MINUTE, \\ \quadd second: SECOND, \\ \} 
+    \\ \quad severity: EVENT SEVERITY ] \\ \} } & request must be sent with auth cookie \\ \hline   
