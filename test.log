@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.5.5)  27 MAY 2016 09:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.5.5)  26 JUN 2016 11:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -133,27 +133,6 @@ File: dvips.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks25
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
-)
-Package graphics Info: Driver file: dvips.def on input line 95.
-)
-\Gin@req@height=\dimen112
-\Gin@req@width=\dimen113
-)
 (/usr/share/texlive/texmf-dist/tex/latex/boxedminipage/boxedminipage.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/pbox/pbox.sty
 Package: pbox 2011/12/07 v1.2 Dynamic parboxes
@@ -162,8 +141,8 @@ Package: pbox 2011/12/07 v1.2 Dynamic parboxes
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count101
 \calc@Bcount=\count102
-\calc@Adimen=\dimen114
-\calc@Bdimen=\dimen115
+\calc@Adimen=\dimen112
+\calc@Bdimen=\dimen113
 \calc@Askip=\skip58
 \calc@Bskip=\skip59
 LaTeX Info: Redefining \setlength on input line 80.
@@ -178,119 +157,159 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 95.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ncctools/watermark.sty
+Package: watermark 2004/12/09 v1.1 Watermarks (NCC)
 ) (./test.aux)
 \openout1 = `test.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Try loading font information for U+msa on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 16.
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+File: goshawk1.eps Graphic file (type eps)
+ <goshawk1.eps>
+[1
 
 ] (./test.toc)
 \tf@toc=\write3
 \openout3 = `test.toc'.
 
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 22--27
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 26--31
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 32--39
+Underfull \hbox (badness 10000) in paragraph at lines 36--43
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--39
+Underfull \hbox (badness 10000) in paragraph at lines 36--43
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--48
+Underfull \hbox (badness 10000) in paragraph at lines 45--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--52
+Underfull \hbox (badness 10000) in paragraph at lines 53--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
 [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 60.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 64.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
 Missing character: There is no â in font cmr8!
 Missing character: There is no € in font cmr8!
 Missing character: There is no “ in font cmr8!
 Missing character: There is no â in font cmr8!
 Missing character: There is no € in font cmr8!
 Missing character: There is no “ in font cmr8!
- [5] [6]
-Underfull \hbox (badness 3590) in paragraph at lines 103--103
+ [5]
+Underfull \hbox (badness 3590) in paragraph at lines 162--162
 []\OT1/cmr/m/n/10 A reg-is-tered user
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--123
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
 
  []
 
 
-Overfull \hbox (59.28802pt too wide) in paragraph at lines 123--123
+Overfull \hbox (30.83527pt too wide) in paragraph at lines 162--162
 []$[]$| 
  []
 
 
-Underfull \hbox (badness 1661) in paragraph at lines 124--124
+Underfull \hbox (badness 1661) in paragraph at lines 162--162
 []\OT1/cmr/m/n/10 Add new user to
  []
 
 
-Overfull \hbox (83.10168pt too wide) in paragraph at lines 100--127
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+
  []
 
-[7
 
-]
-Overfull \vbox (8.58331pt too high) has occurred while \output is active []
+Overfull \hbox (30.83527pt too wide) in paragraph at lines 162--162
+[]$[]$| 
+ []
 
 
-[8] (./test.aux) ) 
+Underfull \hbox (badness 6016) in paragraph at lines 162--162
+[]\OT1/cmr/m/n/10 Get im-age taken
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 162--162
+\OT1/cmr/m/n/10 whom their smar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+
+ []
+
+[6] [7] (./test.aux) ) 
 Here is how much of TeX's memory you used:
- 2068 strings out of 493030
- 25330 string characters out of 6136261
- 81045 words of memory out of 5000000
- 5579 multiletter control sequences out of 15000+600000
+ 2091 strings out of 493030
+ 25729 string characters out of 6136261
+ 92380 words of memory out of 5000000
+ 5596 multiletter control sequences out of 15000+600000
  11849 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,15n,43p,419b,352s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,18n,43p,419b,352s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on test.dvi (8 pages, 14456 bytes).
+Output written on test.dvi (7 pages, 16644 bytes).

@@ -3,16 +3,20 @@
 \usepackage{fancyhdr}
 \usepackage{chngpage}
 \usepackage{color}
-\usepackage{graphicx}
 \usepackage{boxedminipage}
 \usepackage{pbox}
 \usepackage{lscape}
+
+\usepackage{graphicx}
+\usepackage{watermark}
+\thiswatermark{\centering \put(0,-500){\includegraphics[scale=1.5]{goshawk1.eps}} }
 
 
 \title{GosHawk - Smart App \\ Documatation}
 \author{Itay Parnafes \& Tomer Shalmon}
 
 \begin{document}
+
 \maketitle
 \date
 \newpage
@@ -60,6 +64,7 @@ The server runs several component, overwatched by a \emph{watchdog}\footnote{A p
 	\item Manage users registration and permissions
 	\item Query shared DB as a backend component for the app
 	\item Keep track of clients queries
+	\item Arm and Disarm the system
 	\item Check home presence of registered users
 \end{itemize}
 \quad The web server was written in \emph{Django}\footnote{Free and open-source web framework, written in Python, which follows the model–view–controller (MVC) architectural pattern.} 1.8.7 based on Python 2.7.
@@ -94,18 +99,19 @@ blah blah blah....
 
 \section{System Components}
 \subsection{Web Server}
-\begin{landscape}
 \subsubsection{Server Available Methods}
-  \begin{adjustwidth}{-3cm}{} 
-    \begin{tabular}{| l | l | l | p{3cm} | p{5.5cm} | l |}
+\begin{table}[ht]
+\centering    
+    \resizebox{\textwidth}{!}{\begin{tabular}{| l | l | l | p{3cm} | p{6.5cm} | l |}
       \hline
       \textbf{URI} & \textbf{Type} & \textbf{Parameters} & \textbf{Description} & \textbf{Response} & \textbf{Remarks} \\ \hline
       /app/login & POST & \pbox{30cm}{name \\ password} & A registered user login page & \pbox{25cm}{\{ \\
-      'Access Granted': 'True',\\ 'uid': user\_id,\\ 'user\_type': permission \\ \}} & Cookies must be enables \\ \hline
-     /app/register\_mac/[mac\_address] & POST & None & Register given mac to a registered user &\{'Success': 1\} & Request must be sent with auth cookie \\ \hline    
+      'Access Granted': 'True',\\ 'uid': user\_id,\\ 'user\_type': permission \\ \}} & Cookies must be enabled \\ \hline
+     /app/register\_mac & POST & mac & Register given mac to a registered user &\{'Success': 1\} & MAC address should be colon separated \\ \hline    
     /app/sync & GET & None & Request all unread events (by a specific user) & \pbox{25cm}{\{ \\ 
              	\quad events: [ \\ 
              		\qquad \{ \\ 
+             		\qquad \quad "id": "862", \\
              			\qquad \quad timestamp: \{ \\ 
              				\qquad \quad \quad "hour": 7, \\ 
        					    \qquad \quad \quad "month": 3, \\ 
@@ -121,9 +127,38 @@ blah blah blah....
              	\qquad ] \\ 
              \quad \} \\
            } & \\ \hline
-     /app/create\_new\_user] & POST & \pbox{25cm}{name \\ password \\ permission} & Add new user to the local system & \{'Success': 1\} & Only 'Administrator' can add new users \\ \hline
-
-\end{tabular}
-  \end{adjustwidth}
-\end{landscape}
+     /app/create\_new\_user & POST & \pbox{25cm}{name \\ password \\ permission} & Add new user to the local system & \{'Success': 1\} & Only 'Admin' can add new users \\ \hline
+     /app/get\_recent\_events & GET & None & Reuqest 10 most recent system events & \pbox{25cm}{\{ \\ 
+             	\quad events: [ \\ 
+             		\qquad \{ \\ 
+             		\qquad \quad "id": "862", \\
+             			\qquad \quad timestamp: \{ \\ 
+             				\qquad \quad \quad "hour": 7, \\ 
+       					    \qquad \quad \quad "month": 3, \\ 
+                            \qquad \quad \quad "second": 57, \\ 
+             				\qquad \quad \quad "year": 2016, \\ 
+             				\qquad \quad \quad "day": 5, \\ 
+             				\qquad \quad \quad "minute": 48 \\ 
+             			\qquad \quad \}, \\ 
+             			\qquad \quad "type": "Breach", \\ 
+             			\qquad \quad "description": "house has been breached", \\ 
+             			\qquad \quad "severity": "Critical" \\ 
+             		\qquad \quad \} \\ 
+             	\qquad ] \\ 
+             \quad \} \\
+           } & \\ \hline
+	/app/snapshots/<image\_id> & GET & None & Get image taken upon specific event & Binary image data & \\ \hline
+	/app/arm & POST & None & Arm system & \{'Success': 1\} & \\ \hline
+	/app/disarm & POST & None & Disarm system & \{'Success': 1\} & \\ \hline
+	/app/status & GET & None & Get system status (Armed/Unarmed) & \{'Status': Armed/Unarmed\} & \\ \hline
+	/app/whos\_home & GET & None & Get registered users whom their smarphone is connected to the local network & \pbox{25cm}{\{ \\ 
+             	\quad Users: [ \\ 
+             		\qquad \{ \\ 
+             			\qquad \quad "Name": goshawk, \\
+             			\qquad \quad "UID": 99 \\
+             	\qquad ] \\ 
+             \quad \} \\
+           } & \\ \hline
+\end{tabular}}
+\end{table}
 \end{document}
